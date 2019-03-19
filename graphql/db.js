@@ -23,8 +23,8 @@ export const getById = id => {
 	return filteredMovie[0];
 };
 
-export const deleteMobie = (id) => {
-  const cleanedMovies = mobies.filter(movie => movie.id !== id);
+export const deleteMovie = (id) => {
+  const cleanedMovies = movies.filter(movie => movie.id !== id);
   if (movies.length > cleanedMovies.length) {
     movies = cleanedMovies;
     return true;
