@@ -30,4 +30,7 @@ export const people = [{
 	gender: "female"
 }]
 
-export const getById = id => people.filter(person => id === person.id);
+export const getById = id => {
+  const filteredPeople = people.filter(person => person.id === String(id));
+  return filteredPeople[0];
+};
