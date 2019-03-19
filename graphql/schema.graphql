@@ -1,3 +1,9 @@
-type Query {
+type Yunheur {
   name: String!
+  age: Int!
+  gender: String!
+}
+
+type Query {
+  person: Yunheur!
 }
